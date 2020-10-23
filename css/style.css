@@ -75,6 +75,16 @@ html {
     padding-top: 10%;
 }
 
+.padding-top-about {
+    padding-top: 10vh;
+}
+
+@media screen and (max-width: 768px) {
+    .padding-top-about {
+        padding-top: 5vh;
+    }
+  }
+
 .margin-top {
     margin-top: 2.5%;
 }
@@ -165,7 +175,7 @@ html {
     z-index: 3;
     top: -8px;
     width: 100%;
-    height: 1px;
+    height: 2px;
     background: inherit;
 }
 
@@ -244,6 +254,13 @@ html {
     left: 24.5%;
     color: white;
 }
+
+@media screen and (max-width: 768px) {
+    .menu-wrap .menu > div > div {
+        top: 20%;
+    }
+  }
+  
 
 .row-ham-head{
     height: 70px;
@@ -400,7 +417,7 @@ html {
 
 @media only screen and (max-width: 768px) {
     .content .ins-col {
-        padding-top: 0;
+        padding-top: 3vh;
     }
 
     .content .par-1 {
@@ -411,6 +428,14 @@ html {
         -webkit-text-fill-color: transparent;
         display: block;
         text-align: left;
+    }
+
+    .jpn-text {
+        padding-left: 5vw;
+    }
+
+    .row-parall {
+        padding-left: 5vw;
     }
 }
 
@@ -752,6 +777,32 @@ ol.carousel-indicators li.active {
     top: 55%;
 }
 
+@media screen and (max-width: 768px) {
+    .section-5-header {
+        margin-top: -40%;
+        margin-left: 15%;
+    }
+
+    .button-group {
+        position: absolute;
+        width: 70%;
+        top: 45%;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .section-5-header {
+        margin-top: -100%;
+        margin-left: 15%;
+    }
+
+    .button-group {
+        position: absolute;
+        width: 70%;
+        top: 35%;
+    }
+  }
+
 .a-faq {
     color: white;
     text-decoration: none;
@@ -905,7 +956,7 @@ ol.carousel-indicators li.active {
 .backtotop-row {
     width: 100%;
     padding-left: 15%;
-    padding-top: 15px;
+    /* padding-top: 15px; */
 }
 
 .backtotop-txt1 {
@@ -921,7 +972,7 @@ ol.carousel-indicators li.active {
 }
 
 .btn-backtotop {
-    min-height: 7vh;
+    height: 7vh;
     background-color: var(--hamburger-color);
 }
 
